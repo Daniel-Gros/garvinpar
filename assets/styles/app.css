@@ -1,3 +1,44 @@
-body {
-    background-color: skyblue;
+.reset {
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  width: 20%;
+  height: 20%;
+  margin-top: 5px;
+}
+
+.row.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.connexion {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #d9777f;
+  color: #262526;
+  text-align: center;
+  padding: 10px 0;
 }
