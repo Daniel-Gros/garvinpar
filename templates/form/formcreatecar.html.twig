@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Création d'un véhicule
+{% endblock %}
+
+{% block body %}
+	<form action="path{{'Form/FormeCreateCar.php'}}" method="POST">
+		<input type="text" name="marque" placeholder="marque">
+		<br>
+		<input type="text" name="modèle" placeholder="modèle">
+		<br>
+		<input type="text" name="année" placeholder="année">
+		<br>
+		<input type="text" name="couleur" placeholder="couler">
+		<br>
+		<input type="text" name="kilometres" placeholder="nombre de kilomètres">
+		<br>
+		<input type="text" name="place" placeholder="nombre de places">
+		<br>
+		<input type="text" name="porte" placeholder="nombre de portes">
+		<br>
+		<input type="text" name="puissance_fiscale" placeholder="puissance fiscale">
+		<br>
+		<input type="text" name="puissance_DIN" placeholder="puissance DIN">
+		<br>
+		<label for="carburant">Choisir un type de carburant :</label>
+		<select id="carburant" name="carburant">
+			<option value="essence">Essence</option>
+			<option value="diesel">Diesel</option>
+			<option value="hybride">Hybride</option>
+			<option value="electrique">Électrique</option>
+			<option value="GPL">GPL</option>
+		</select>
+		<br>
+		<label for="boite">Type de boîte de vitesse</label>
+		<select id="boite" name="boite">
+			<option value="manuelle">Manuelle</option>
+			<option value="automatique">Automatique</option>
+		</select>
+		<br>
+		<label for="picUpload">Joindre une photo du véhicule :</label>
+		<input type="file" id="picUpload" name="picUpload">
+		<input type="submit" value="Envoyer">
+		<br>
+		<input type="submit" value="Valider">
+		<input type="reset" value="Annuler">
+	</form>
+{% endblock %}

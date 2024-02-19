@@ -1,0 +1,74 @@
+{# ****** CONTAINER DE LA PAGE D'ACCUEIL ****** #}
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<img class="img-fluid" src="{{ asset('asset/uploads/images/alpinebleue.jpg') }}" alt="photo de voiture alpine bleue">
+	<div class="card_about pt-5">
+		<div class="card" style="width: 38rem;">
+			<div class="card-body">
+				<h5 class="card-title text-uppercase">fort de ses 15 années d'expérience dans la réparation automobile</h5>
+				<h6 class="card-subtitle mb-2 text-body-secondary">Vincent Parrot a ouvert son propre garage à Toulouse en 2021.</h6>
+				<p class="card-text">Depuis 2 ans, il propose une large gamme de services: réparation de la carrosserie et de la mécanique des voitures ainsi que leur entretien régulier pour garantir leur performance et leur sécurité.
+					<br><br>
+					De plus, le Garage V. Parrot met en vente des véhicules d'occasion afin d'accroître son chiffre d'affaires. Vincent Parrot considère son atelier comme un véritable lieu de confiance pour ses clients et leurs voitures doivent, selon lui, à tout prix être entre de bonnes mains.</p>
+				<a href="#" class="card-link">Accéder à nos services</a>
+				<a href="#" class="card-link">Accéder à notre gamme occasion</a>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="text-center">
+		<h2>VOTRE SATISFACTION ? NOTRE PRIORITÉ.</h2>
+		{# include avis + étoiles de notation en lorem ipsum #}
+		<hr>
+		<h2>
+			"Garages - Établissements devant lesquels l’automobiliste passe quand il roule
+			<br/>
+			et loin desquels il se trouve lorsqu’il est en panne.”
+		</h2>
+	</div>
+
+	<div class="list_service pt-4">
+		<p>Chez Vincent Parrot, nous vous proposons une large gamme de services et entretiens</p>
+		<ul>
+			<li>Petit Entretien (vidange, plaquettes, nettoyage moteur...).</li>
+			<li>Changement de pneumatiques, équilibrage.</li>
+			<li>Remplacement pare-brise et réparation d'impact (agrée assureurs).</li>
+			<li>Entretien et recharge de climatisation.</li>
+			<li>Détection des pannes électriques.</li>
+			<li>Assistance et dépannage (dans un rayon de 50kms autour du garage)</li>
+			<li>Prêt de véhicule de courtoisie.</li>
+			<li>Entretiens et réparations complexes (Réfection moteur, changement de boîte de vitesse, culasse...).</li>
+			<li>Réalisations de vos cartes grises.</li>
+		</ul>
+
+		<a type="button" href="form/formcontact/html.twig">PRENEZ RENDEZ-VOUS ICI</a>
+	</div>
+	<div class="row">
+		<div
+			class="col-9"><!-- vide pour placer les infos sur la doite de la page -->
+		</div>
+		<div class="col-3">
+			<div class="infos sidebar">
+				<p>1 Quai Général De Gaulles 31000 Toulouse</p>
+				<p>01.02.03.04.05</p>
+				<p>Du Lundi au Vendredi</p>
+				<p>8h45-12h00 / 14h00-18h00</p>
+				<p>Le Samedi</p>
+				<p>8h45-12h00</p>
+				<hr>
+				<h5>Moyens de paiement</h5>
+				<p>Carte Bancaire</p>
+				<hr>
+				<p>Espèces</p>
+				<hr>
+				<p>Virement bancaire</p>
+				<hr>
+				<p>Paiement possible en plusieurs fois à partir de 250,00€</p>
+			</div>
+		</div>
+	</div>
+{% endblock %}

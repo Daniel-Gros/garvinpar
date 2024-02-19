@@ -1,5 +1,12 @@
 controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+  resource:
+    path: ../src/Controller/
+    namespace: App\Controller
+  type: attribute
+
+kernel:
+  resource: App\Kernel
+  type: attribute
+my_route:
+  path: /my-route
+  controller: App\Controller\MyController::myAction

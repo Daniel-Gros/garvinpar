@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Erreur 404
+{% endblock %}
+
+{% block body %}
+
+
+	<div class="error_login">
+		<h1>Erreur à l'authentification</h1>
+		<p>Le nom d'utilisateur et/ou le mot de passe sont incorrects
+		</p>
+		<a href="{{ path('home') }}">Retour à l'accueil</a>
+	</div>
+{% endblock %}

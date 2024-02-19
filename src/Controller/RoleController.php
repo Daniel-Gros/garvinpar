@@ -6,13 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
-class PageController extends AbstractController
+class RoleController extends AbstractController
 {
-    #[Route('/page', name: 'app_page')]
+    #[Route('/role', name: 'app_role')]
     public function index(): Response
     {
-        return $this->render('page/index.html.twig', [
-            'controller_name' => 'PageController',
+        return $this->render('role/index.html.twig', [
+            'controller_name' => 'RoleController',
         ]);
     }
 }

@@ -1,0 +1,18 @@
+{%extends 'base.html.twig'%}
+
+{% block title %}
+	Véhicules d'occasion
+{% endblock %}
+
+{% block body %}
+	<h1>Véhicules d'occasion</h1>
+	<p>Voici la liste des véhicules d'occasion disponibles :</p>
+	<ul>
+		{% for vehicle in vehicles %}
+			<li>{{ vehicle.brand }}
+				{{ vehicle.model }}
+				({{ vehicle.price }}
+				€)</li>
+		{% endfor %}
+	</ul>
+{% endblock %}

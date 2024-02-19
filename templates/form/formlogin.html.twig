@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Login
+{% endblock %}
+
+{% block body %}
+	<div class="container_login">
+		<h1>AUTHENTIFICATION</h1>
+		<h2>
+			<strong>ATTENTION !!</strong>
+		</h2>
+		<p>Cette page est réservée au personnel du Garage Vincent Parrot</p>
+		<p>Si vous êtes un client, veuillez retourner à la page d'accueil</p>
+		<input type="button" value="RETOURNER À L'ACCUEIL">
+
+		<form action="login.php" method="GET">
+			<div class="form-group">
+				<label for="username">Utilisateur</label>
+				<input type="text" id="username" name="username" required>
+			</div>
+			<div class="form-group">
+				<label for="password">Mot de Passe</label>
+				<input type="password" id="password" name="password" required>
+			</div>
+			<div class="form-group">
+				<input type="checkbox" id="remember_me" name="remember_me">
+				<label for="remember_me">Rester connecté</label>
+			</div>
+			<div class="form-group">
+				<button type="submit">Login</button>
+				<button type="reset">Annuler</button>
+			</div>
+
+		</a>
+	</div>
+</form></div>{% endblock %}
