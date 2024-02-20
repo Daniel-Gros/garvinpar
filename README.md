@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 # garagevincentparrot
 Study project of a fictionnal car seller
 
+=======
+>>>>>>> master
 Lien Github du projet : https://github.com/Daniel-Gros/garagevincentparrot
 
 Git Clone : https://github.com/Daniel-Gros/garagevincentparrot.git
@@ -17,10 +20,13 @@ Pour faire fonctionner le projet :
 
 - composer require templating
 
+<<<<<<< HEAD
 - une fois le tout initialisé, lancer la commande symfony server:start
 
 - Vous pouvez ensuite intialiser le projet sur le localhost.
 
+=======
+>>>>>>> master
 Dans le dossier Dossier Technique (disponible sur le github du projet)
 
 Vous trouverez :

@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mode Admin
+{% endblock %}
+
+{% block body %}
+	<div class="container admin">
+		<h1>Vous êtes sur la page d'administration</h1>
+		<h2>Que voulez vous faire ?</h2>
+		<div class="admin_options">
+			<a href="{{ path('app_formcreatecar') }}" class="btn btn-primary">Ajouter une voiture</a>
+			<a href="#" class="btn btn-primary">Clore une vente</a>
+			<a href="#" class="btn btn-primary">Gestion des rendez-vous</a>
+			<a href="#" class="btn btn-primary">Accès aux demande de contact</a>
+			<a href="#" class="btn btn-primary">Accès au planning</a>
+		</div>
+	</div>
+{% endblock %}
