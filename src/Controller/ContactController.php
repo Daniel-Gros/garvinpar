@@ -11,10 +11,9 @@ class ContactController extends AbstractController
 {
 
 
-  #[Route('/formcontact', name: 'app_formcontact')]
+  #[Route('/contact', name: 'app_contact_show')]
   public function formContact(): Response
   {
-    $form = $this->createForm(FormContact::class);
     return $this->render('form/formcontact.html.twig', [
       'controller_name' => 'ContactController'
     ]);
