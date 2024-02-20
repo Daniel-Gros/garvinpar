@@ -6,7 +6,7 @@ Lien Github du projet : https://github.com/Daniel-Gros/garagevincentparrot
 Les prérequis:
 
 Assurez vous d'avoir sur votre machine:
-- Node.js (la version 10.2.4 sera suffisante pour ce projet)
+
 - Git que vous pouvez télécharger ici : https://git-scm.com/downloads
 - Composer que vous pouvez télécharger ici : https://getcomposer.org/
 - Xampp (où vous pourrez installer le projet dans le dossier htdocs pour le faire fonctionner en local) 
