@@ -2,6 +2,15 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+h1 {
+  font-family: "rajdhani", sans-serif;
+}
+
 .logo {
   width: 20%;
   height: 20%;
@@ -13,8 +22,18 @@
   align-items: center;
   justify-content: space-evenly;
 }
+.phone {
+  background-color: #d9777f;
+  color: #f2f2f2;
+}
+.avis {
+  background-color: #d9777f;
+  color: #f2f2f2;
+  text-decoration: none;
+}
 
 .navbar ul {
+  background-color: #d9777f;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -27,7 +46,17 @@
 
 .navbar ul li a {
   text-decoration: none;
-  color: #000;
+  color: #f2f2f2;
+}
+
+.card_about,
+.card_service {
+  background-color: #d9777f;
+  color: #f2f2f2;
+}
+
+.card_about a {
+  color: #f2f2f2;
 }
 
 .connexion {
@@ -42,6 +71,22 @@
   text-align: center;
   padding: 10px 0;
 }
+
+.social_media {
+  text-decoration: none;
+  color: #f2f2f2;
+}
 .subtitle {
   text-align: center;
+}
+
+.service_card {
+  height: 15%;
+  width: auto;
+}
+
+.button_link {
+  text-decoration: none;
+  background-color: #d92332;
+  color: #f2f2f2;
 }
