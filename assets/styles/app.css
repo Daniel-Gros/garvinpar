@@ -25,11 +25,17 @@ h1 {
 .phone {
   background-color: #d9777f;
   color: #f2f2f2;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 .avis {
   background-color: #d9777f;
   color: #f2f2f2;
   text-decoration: none;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .navbar ul {
