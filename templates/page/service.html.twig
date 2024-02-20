@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Services
+{% endblock %}
+
+{% block body %}
+	<h1 class="text-center mt-3">RETROUVEZ ICI NOTRE GAMME DE SERVICE</h1>
+
+	<a href="{{ path('app_contact_show') }}" class="button_link">PRENDRE RENDEZ-VOUS EN CLIQUANT ICI</a>
+
+	<div class="row mt-5">
+
+		<div class="card card_service col-sm-6 col-md-4" style="width: 20rem;">
+			<img src="{{ asset('asset/uploads/images/cabine_peinture_mustang_rouge.jpg') }}" class="card-img-top service_card" alt="cabine de peinture automobile avec le nez d'une for mustang rouge">
+			<div class="card-body">
+				<h5 class="card-title">Carrosserie & Peinture</h5>
+				<p class="card-text">Nous opérons sur les travaux de rénovation de vos véhicules au niveau carrosserie et peinture. Nous sommes agrées toute assurance française en cas de sinistres.</p>
+			</div>
+		</div>
+
+		<div class="card card_service col-sm-6 col-md-4" style="width: 20rem;">
+			<img src="{{ asset('asset/uploads/images/pneu.jpg') }}" class="card-img-top service_card" alt="photo d'un pneu">
+			<div class="card-body">
+				<h5 class="card-title">Petit Entretien</h5>
+				<p class="card-text">Nous assurons les petits travaux d'entretien de vos véhicules , changement de pneus, équilibrage, vidange, changement de plaquettes et disques.</p>
+			</div>
+		</div>
+
+		<div class="card card_service col-sm-6 col-md-4" style="width: 20rem;">
+			<img src="{{ asset('asset/uploads/images/changement_parebrise.jpg') }}" class="card-img-top service_card" alt="opération de changement de parebrise de voiture">
+			<div class="card-body">
+				<h5 class="card-title">Impact ou Fissure complète ?</h5>
+				<p class="card-text">
+					Le Garage Vincent Parrot s'occupe de changer votre parebrise ou de réparer l'impact si cela s'avère seulement nécessaire. Nous sommes agrée toute assurance française pour ce type de travaux.
+				</p>
+			</div>
+		</div>
+
+		<div class="card card_service col-sm-6 col-md-4" style="width: 20rem;">
+			<img src="{{ asset('asset/uploads/images/carte_grise.jpg') }}" class="card-img-top service_card" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Démarches administratives</h5>
+				<p class="card-text">Nous pouvons nous occuper de vos formalités de carte grise, vous aurez un gain de temps exponentiel en nous faisant confiance dans ces démarches.</p>
+			</div>
+		</div>
+
+	</div>
+{% endblock %}
