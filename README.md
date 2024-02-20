@@ -1,38 +1,50 @@
-<<<<<<< HEAD
 # garagevincentparrot
-Study project of a fictionnal car seller
+Projet de garage fictif pour l'évaluation en cours de formation de l'école Studi Promotion Nivat
 
-=======
->>>>>>> master
 Lien Github du projet : https://github.com/Daniel-Gros/garagevincentparrot
 
-Git Clone : https://github.com/Daniel-Gros/garagevincentparrot.git
+Les prérequis:
 
-Pour faire fonctionner le projet :
+Assurez vous d'avoir sur votre machine:
+- Node.js (la version 10.2.4 sera suffisante pour ce projet)
+- Git que vous pouvez télécharger ici : https://git-scm.com/downloads
+- Composer que vous pouvez télécharger ici : https://getcomposer.org/
+- Xampp (où vous pourrez installer le projet dans le dossier htdocs pour le faire fonctionner en local) 
+- PHP version 8.2.12 à la racine de votre machine
+  - Après installation de PHP assurez vous que le php.exe est bien dans votre PATH des variables d'environnement
+  - dans le fichier PHP.ini de votre PHP : décommenter extension=zip (en retirant le ";" devant)
+- Vous devrez ensuite installer scoop , vous trouverez toutes les informations nécessaire à son téléchargement ici https://scoop.sh/
+- L'installation de scoop servira à installer Symfony CLI que vous pourrez installer en tapant cette ligne de commande dans votre powershell windows $ scoop install symfony-cli
+  Vous pourrez gràace à cela utiliser la commande symfony dans votre terminal d'IDE.
 
-- PHP VERSION 8.2.12
-- Symfony CLI VERSION 5.8.7
-- Symfony VERSION 7.0.3
-- Bootstrap VERSION 5.3.2
-- PHP.ini : décommenter extension=zip
+Une fois dans le répertoire qui doit ressembler à ceci :
+C:\xampp\htdocs
 
-  Installer :
+Vous pouvez cloner le projet en écrivant dans votre terminal cette commande 
 
-- composer require templating
+git clone https://github.com/Daniel-Gros/garagevincentparrot.git
 
-<<<<<<< HEAD
-- une fois le tout initialisé, lancer la commande symfony server:start
+Une fois le répertoire cloné vous pouvez commencer le faire fonctionner en local en utilisant la commande de terminal symfony server:start
 
-- Vous pouvez ensuite intialiser le projet sur le localhost.
+Dès que le serveur sera lancé rendez-vous sur localhost:8000/accueil.
 
-=======
->>>>>>> master
-Dans le dossier Dossier Technique (disponible sur le github du projet)
+Vous pourrez voir dans votre navigateur le projet tourner en local.
 
-Vous trouverez :
+dans le workspace de l'ecf vous trouverez un dossier technique.
+
+disponible dans le repository github à cette adresse :
+
+
+
+Il comporte:
 
 - La charte graphique
 - Le diagramme de cas d'utilisation réalisé sur visual paradigm
 - le diagramme merise
 - Le Wireframe de l'application réalisé sur Balsamiq
 - le TP dev en pdf
+
+
+
+
+
