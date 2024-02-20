@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-	<form class="container" method="POST" action="{{path('Form/FormContact.php')}}">
+	<form class="container" method="POST" action="#">
 		<legend>Formulaire de Contact</legend>
 		<div class="form-group">
 			<label for="nom">Nom :</label>
@@ -24,6 +24,6 @@
 			<textarea class="form-control" id="message" name="message" placeholder="Message" required></textarea>
 		</div>
 		<button type="submit" class="btn btn-primary">Envoyer</button>
-		<button type="reset" class="btn btn-danger">Annuler</button>
+		<a href="{{ path('app_home') }}" class="btn btn-danger">Annuler</a>
 	</form>
 {% endblock %}
