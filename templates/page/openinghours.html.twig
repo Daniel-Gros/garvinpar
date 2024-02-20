@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Horaires d'ouverture
+{% endblock %}
+
+{% block body %}
+
+	<div class="container">
+		<h2>Nous sommes ouverts les :</h2>
+
+
+		<div class="card" style="width: 30rem;">
+			<img src="{{ asset('asset/uploads/images/accueil_garage.jpg') }}" class="card-img-top" alt="2 personnes souriantes dans un atelier de mécanique">
+			<div class="card-body row">
+				<div class="col-4">
+					<p class="card-text">
+						<strong>Lundi</strong>
+					</p>
+					<p>
+						<strong>Mardi</strong>
+					</p>
+					<p>
+						<strong>Mercredi</strong>
+					</p>
+					<p>
+						<strong>Jeudi</strong>
+					</p>
+					<p>
+						<strong>Vendredi</strong>
+					</p>
+					<p>
+						<strong>Samedi</strong>
+					</p>
+					<p>
+						<strong>Dimanche</strong>
+					</p>
+					<p>
+						<strong>Jours fériés</strong>
+					</p>
+				</div>
+				<div class="col-8">
+					<p>8h45 - 12h00 / 14h00 - 1800</p>
+					<p>8h45 - 12h00 / 14h00 - 1800</p>
+					<p>8h45 - 12h00 / 14h00 - 1800</p>
+					<p>8h45 - 12h00 / 14h00 - 1800</p>
+					<p>8h45 - 12h00 / 14h00 - 1800</p>
+					<p>8h45 - 12h00</p>
+					<p>Fermé</p>
+					<p>Fermé</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>{% endblock %}
