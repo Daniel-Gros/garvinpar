@@ -5,7 +5,7 @@
 {% block body %}
 	<img class="img-fluid" src="{{ asset('asset/uploads/images/alpinebleue.jpg') }}" alt="photo de voiture alpine bleue">
 	<div class="pt-5">
-		<div class="card" style="width: 38rem;">
+		<div class="card d-none d-md-inline" style="width: 38rem;">
 			<div class="card-body card_about">
 				<h5 class="card-title text-uppercase">fort de ses 15 années d'expérience dans la réparation automobile</h5>
 				<h6 class="card-subtitle mb-2 text-body-secondary">Vincent Parrot a ouvert son propre garage à Toulouse en 2021.</h6>
@@ -20,7 +20,7 @@
 
 	<hr>
 
-	<div class="text-center">
+	<div class="text-center col-md-6">
 		<h2>VOTRE SATISFACTION ? NOTRE PRIORITÉ.</h2>
 		<p>"Nous sommes ravis de l'accueil que nous avait réservé le chef d'atelier, il a su très vite nous dire la sévérité de la panne ainsi qu'une approximation du temps que cela prendrait pour réparer notre véhicule. Pas de "je vous rappelle dans l'après-midi" , il nous a dit que cela prendrait 5 jours et cela en a pris 4, il nous gracieusement mis à disposition un véhicule de courtoisie. Le devis a été respecté et nous avons pu payer en plusieurs fois pour plus de conforts.
 			<br>
@@ -39,9 +39,10 @@
 		<p></p>
 
 
-		<div class="card card_service" style="width: 38rem;">
+		<div class="card card_service col-12">
 			<div class="card-body">
-				<h5 class="card-title">Chez Vincent Parrot, nous vous proposons une large gamme de services et entretiens</h5>
+			<h2 class="d-block d-md-none">NOS SERVICES</h2>
+				<h5 class="card-title d-none d-md-inline">Chez Vincent Parrot, nous vous proposons une large gamme de services et entretiens</h5>
 				<ul class="card-text">
 					<li>Petit Entretien (vidange, plaquettes, nettoyage moteur...).</li>
 					<li>Changement de pneumatiques, équilibrage.</li>
@@ -53,15 +54,15 @@
 					<li>Entretiens et réparations complexes (Réfection moteur, changement de boîte de vitesse, culasse...).</li>
 					<li>Réalisations de vos cartes grises.</li>
 				</ul>
-				<a href="{{ path('app_contact_show') }}" class="card-link">PRENDRE RENDEZ-VOUS ICI</a>
+				<a href="{{ path('app_contact_show') }}" class="button_link">PRENDRE RENDEZ-VOUS ICI</a>
 			</div>
 		</div>
 	</div>
 	<div class="row">
 		<div
-			class="col-9"><!-- vide pour placer les infos sur la doite de la page -->
+			class="col-9 d-none d-md-inline"><!-- vide pour placer les infos sur la doite de la page -->
 		</div>
-		<div class="col-3">
+		<div class="col-12 col-md-3">
 			<div class="infos sidebar">
 				<p>
 					<strong>1 Quai Général De Gaulles 31000 Toulouse</strong>
