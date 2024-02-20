@@ -12,29 +12,29 @@ use Symfony\Config\Monolog\HandlerConfig\PublisherConfig;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use Symfony\Component\HttpFoundation\Request;
 
-class FormLogSuperAdmin extends AbstractType
-{
-  public function buildLogSuperAdmin(FormBuilderInterface $builder, array $options)
-  {
-    $builder
-      ->add('username', TextType::class, [
-        'label' => 'Nom d\'utilisateur',
-      ])
-      ->add('password', PasswordType::class, [
-        'label' => 'Mot de passe',
-      ])
-      ->add('submit', SubmitType::class, [
-        'label' => 'Valider',
-      ]);
-  }
+// class FormLogSuperAdmin extends AbstractType
+// {
+//   public function buildLogSuperAdmin(FormBuilderInterface $builder, array $options)
+//   {
+//     $builder
+//       ->add('username', TextType::class, [
+//         'label' => 'Nom d\'utilisateur',
+//       ])
+//       ->add('password', PasswordType::class, [
+//         'label' => 'Mot de passe',
+//       ])
+//       ->add('submit', SubmitType::class, [
+//         'label' => 'Valider',
+//       ]);
+//   }
 
 
-  public function configureOptions(OptionsResolver $resolver)
-  {
-    $resolver->setDefaults([
-      // Configure your form options here
-    ]);
-  }
+//   public function configureOptions(OptionsResolver $resolver)
+//   {
+//     $resolver->setDefaults([
+//       // Configure your form options here
+//     ]);
+//   }
 
 
 
@@ -49,4 +49,4 @@ class FormLogSuperAdmin extends AbstractType
   //   }
   // }
   // Path: src/Form/FormCreateCar.php
-}
+//}
