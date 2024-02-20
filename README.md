@@ -13,3 +13,13 @@ Pour faire fonctionner le projet :
   Installer :
 
 - composer require templating
+
+Dans le dossier Dossier Technique (disponible sur le github du projet)
+
+Vous trouverez :
+
+- La charte graphique
+- Le diagramme de cas d'utilisation réalisé sur visual paradigm
+- le diagramme merise
+- Le Wireframe de l'application réalisé sur Balsamiq
+- le TP dev en pdf
