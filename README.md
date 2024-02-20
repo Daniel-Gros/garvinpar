@@ -3,6 +3,8 @@ Projet de garage fictif pour l'évaluation en cours de formation de l'école Stu
 
 Lien Github du projet : https://github.com/Daniel-Gros/garagevincentparrot
 
+Lien du déploiement : https://ecfgarageparrotvincent-223702de9c93.herokuapp.com/
+
 Les prérequis:
 
 Assurez vous d'avoir sur votre machine:
