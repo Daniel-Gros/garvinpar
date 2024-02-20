@@ -6,6 +6,10 @@
 			{% block title %}Garage Vincent Parrot
 			{% endblock %}
 		</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> {% block stylesheets %}{% endblock %}
 		</head>
@@ -13,16 +17,16 @@
 
 		<body>
 			<header>
-				<div class="row phone avis">
+				<div class="row">
 					<div class="col-3">
-						<p class="text-start">Appelez nous au
+						<p class="text-start phone">Appelez nous au
 							<strong>01 02 03 04 05</strong>
 						</p>
 					</div>
 					<div class="col-6"></div>
 					<div class="col-3">
 						<p class="text-end">
-							<a href="templates/form/formavis.html.twig">Laissez nous un avis</a>
+							<a href="{{ path('app_avis') }}" class="avis">Laissez nous un avis</a>
 						</p>
 					</div>
 				</div>
@@ -31,27 +35,27 @@
 					<nav class="navbar col-6">
 						<ul class="link">
 							<li>
-								<a href="templates/page/home.html.twig">Accueil</a>
+								<a href="{{ path('app_home') }}">Accueil</a>
 							</li>
 							<li>
-								<a href="'templates/page/about.html.twig">A Propos</a>
+								<a href="{{ path('app_about') }}">A Propos</a>
 							</li>
 							<li>
-								<a href="templates/car.html.twig">Ventes</a>
+								<a href="{{ path('app_car') }}">Ventes</a>
 							</li>
 							<li>
-								<a href="templates/page/service.html.twig">Services</a>
+								<a href="{{ path('app_service') }}">Services</a>
 							</li>
 							<li>
-								<a href="templates/horaire.html.twig">Horaires</a>
+								<a href="{{ path('app_openinghour') }}">Horaires</a>
 							</li>
 							<li>
-								<a href="templates/form/formcontact.html.twig">Contactez-nous</a>
+								<a href="{{ path('app_contact_show') }}">Contactez-nous</a>
+							</li>
+							<li>
+								<a href="{{ path('app_login') }}">Administration</a>
 							</li>
 						</ul>
-						<li>
-							<a class="login_button" type="button" href="form/formlogin.html.twig">SE CONNECTER</a>
-						</li>
 					</nav>
 				</div>
 			</body>
@@ -61,21 +65,21 @@
 <main>
 	{% block body %}{% endblock %}
 </main>
-<footer>
+<footer class="footer">
 	<h5 class="text-center social_media">
 		Rejoignez nous sur nos réseaux sociaux
 		<br><br>
 		<img src="{{ asset('asset/uploads/icons/instagram.svg') }}" alt="logo instagram" height="20" width="20"/>
-		<a href="#">
+		<a href="#" class="social_media">
 			INSTAGRAM
 		</a>
 		<img src="{{ asset('asset/uploads/icons/facebook.svg') }}" alt="logo instagram" height="20" width="20"/>
 		<a href="#">
-			<a href="#">FACEBOOK
+			<a href="#" class="social_media">FACEBOOK
 			</a>
 			<img src="{{ asset('asset/uploads/icons/linkedin.svg') }}" alt="logo instagram" height="20" width="20"/>
 			<a href="#">
-				<a href="#">LINKEDIN
+				<a href="#" class="social_media">LINKEDIN
 				</a>
 			</h5>
 			<h6 class="text-center">Copyright © 2024 Projet étudiant de Daniel Gros promotion Nivat école Studi</h6>
