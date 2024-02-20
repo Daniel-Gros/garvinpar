@@ -5,32 +5,25 @@
 
 {% block body %}
 	<div class="container_login">
-		<h1>AUTHENTIFICATION</h1>
-		<h2>
-			<strong>ATTENTION !!</strong>
-		</h2>
-		<p>Cette page est réservée au personnel du Garage Vincent Parrot</p>
-		<p>Si vous êtes un client, veuillez retourner à la page d'accueil</p>
-		<input type="button" value="RETOURNER À L'ACCUEIL">
+		<div class="row">
+			<h1>AUTHENTIFICATION</h1>
+		</div>
 
 		<form action="login.php" method="GET">
-			<div class="form-group">
-				<label for="username">Utilisateur</label>
-				<input type="text" id="username" name="username" required>
+			<div class="row">
+				<div class="form-group col-3">
+					<label for="username">Utilisateur</label>
+					<input type="text" id="username" name="username" required>
+				</div>
+				<div class="form-group col-3">
+					<label for="password">Mot de Passe</label>
+					<input type="password" id="password" name="password" required>
+				</div>
 			</div>
-			<div class="form-group">
-				<label for="password">Mot de Passe</label>
-				<input type="password" id="password" name="password" required>
-			</div>
-			<div class="form-group">
-				<input type="checkbox" id="remember_me" name="remember_me">
-				<label for="remember_me">Rester connecté</label>
-			</div>
-			<div class="form-group">
+			<div class="form-group mt-3 d-flex justify-content-center">
 				<button type="submit">Login</button>
+				<div class="col-1"></div>
 				<button type="reset">Annuler</button>
-			</div>
-
-		</a>
-	</div>
-</form></div>{% endblock %}
+			</form>
+		</div>
+	{% endblock %}
