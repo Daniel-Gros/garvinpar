@@ -15,7 +15,8 @@ Assurez vous d'avoir sur votre machine:
   - dans le fichier PHP.ini de votre PHP : décommenter extension=zip (en retirant le ";" devant)
 - Vous devrez ensuite installer scoop , vous trouverez toutes les informations nécessaire à son téléchargement ici https://scoop.sh/
 - L'installation de scoop servira à installer Symfony CLI que vous pourrez installer en tapant cette ligne de commande dans votre powershell windows $ scoop install symfony-cli
-  Vous pourrez gràace à cela utiliser la commande symfony dans votre terminal d'IDE.
+
+  Vous pourrez grâce à cela utiliser la commande symfony dans votre terminal d'IDE.
 
 Une fois dans le répertoire qui doit ressembler à ceci :
 C:\xampp\htdocs
