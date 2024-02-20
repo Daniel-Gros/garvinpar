@@ -17,6 +17,10 @@ Pour faire fonctionner le projet :
 
 - composer require templating
 
+- une fois le tout initialisé, lancer la commande symfony server:start
+
+- Vous pouvez ensuite intialiser le projet sur le localhost.
+
 Dans le dossier Dossier Technique (disponible sur le github du projet)
 
 Vous trouverez :
