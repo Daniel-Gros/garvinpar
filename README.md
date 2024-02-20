@@ -30,9 +30,11 @@ Dès que le serveur sera lancé rendez-vous sur localhost:8000/accueil.
 
 Vous pourrez voir dans votre navigateur le projet tourner en local.
 
-dans le workspace de l'ecf vous trouverez un dossier technique.
+Dans le workspace de l'ecf vous trouverez un dossier technique.
 
 disponible dans le repository github à cette adresse :
+
+https://github.com/Daniel-Gros/garvinpar
 
 
 
