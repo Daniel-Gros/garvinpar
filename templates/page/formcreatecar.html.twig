@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block body %}
-	<form action="path{{'Form/FormeCreateCar.php'}}" method="POST">
+	<form action="{{path('FormCreateCar.php') }}" method="POST">
 		<input type="text" name="marque" placeholder="marque">
 		<br>
 		<input type="text" name="modèle" placeholder="modèle">
