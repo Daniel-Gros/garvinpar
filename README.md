@@ -8,6 +8,7 @@ Pour faire fonctionner le projet :
 - Symfony CLI VERSION 5.8.7
 - Symfony VERSION 7.0.3
 - Bootstrap VERSION 5.3.2
+- PHP.ini : décommenter extension=zip
 
   Installer :
 
